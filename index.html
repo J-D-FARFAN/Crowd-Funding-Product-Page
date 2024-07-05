@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crowdfunding product page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script defer src="main.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <div class="montionBlur"></div>
+
+    <nav class="contentNavbarPage spacePadding">
+        <span class="logoPage"></span>
+        <ul class="navbar">
+            <a href="#" class="listNav">About</a>
+            <div class="lineThinkNavbar"></div>
+            <a href="#" class="listNav">Discover</a>
+            <div class="lineThinkNavbar"></div>
+            <a href="#" class="listNav">Get Started</a>
+        </ul>
+        <span class="menuBurguerPage"></span>
+    </nav>
+
+    <main class="content__allCrowdFunding--main">
+        <article class="content--crowdFunding">
+            <section class="content--introductionMastercraft">
+                <header class="introductionMastercraft">
+                    <h1 class="title">Mastercraft Bamboo Monitor Riser</h1>
+                    <p class="txt">
+                        A beautiful & handcrafted monitor stand to reduce neck and eye
+                        strain.
+                    </p>
+                </header>
+
+                <section class="bx--btn-options">
+                    <input class="btn--backThisProject" type="button" value="Back this project" />
+
+                    <div class="bx--bookmark">
+                        <svg class="iconBookmark" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <circle class="colorCircle" fill="#2F2F2F" cx="28" cy="28" r="28" />
+                                <path class="flagBookmark" fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                            </g>
+                        </svg>
+                        <span class="bookmark">Bookmark</span>
+                    </div>
+                </section>
+            </section>
+
+            <section class="bx--allBacked">
+                <div class="backed-contain">
+                    <section class="numbersBacked">
+                        <span class="numbers">$89,914</span>
+                        <span class="total">of $100,000 backed</span>
+                    </section>
+                    <span class="lineThink"></span>
+                    <section class="numbersBacked">
+                        <span class="numbers">5,007</span>
+                        <span class="total">total backers</span>
+                    </section>
+                    <span class="lineThink"></span>
+                    <section class="numbersBacked">
+                        <span class="numbers">56</span>
+                        <span class="total">days left</span>
+                    </section>
+                </div>
+
+                <div class="bx--longBar"></div>
+            </section>
+
+            <section class="about--project">
+                <section class="about">
+                    <h2 class="titelAbout">About this project</h2>
+                    <p class="txt">
+                        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+                        platform that elevates your screen to a more comfortable viewing
+                        height. Placing your monitor at eye level has the potential to
+                        improve your posture and make you more comfortable while at work,
+                        helping you stay focused on the task at hand.
+                    </p>
+                    <p class="txt">
+                        Featuring artisan craftsmanship, the simplicity of design creates
+                        extra desk space below your computer to allow notepads, pens, and
+                        USB sticks to be stored under the stand.
+                    </p>
+                </section>
+
+                <article class="sectionReward--project">
+                    <section class="content--cardReward">
+                        <header class="headerCard">
+                            <h3 class="">Bamboo Stand</h3>
+                            <span class="pledge">Pledge $25 or more</span>
+                        </header>
+                        <p class="txt">
+                            You get an ergonomic stand made of natural bamboo. You've helped
+                            us launch our promotional campaign, and you’ll be added to a
+                            special Backer member list.
+                        </p>
+                        <footer class="footerCard">
+                            <span class="numberCard">101<span class="left"> left</span></span>
+                            <input id="sltReward" class="btn--selectedReward" type="submit" value="Select Reward" />
+                        </footer>
+                    </section>
+
+                    <section class="content--cardReward">
+                        <header class="headerCard">
+                            <h3 class="titleReward">Black Edition Stand</h3>
+                            <span class="pledge">Pledge $75 or more</span>
+                        </header>
+                        <p class="txt">
+                            You get a Black Special Edition computer stand and a personal
+                            thank you. You’ll be added to our Backer member list. Shipping
+                            is included.
+                        </p>
+                        <footer class="footerCard">
+                            <span class="numberCard">64<span class="left"> left</span></span>
+                            <input id="sltReward" class="btn--selectedReward" type="submit" value="Select Reward" />
+                        </footer>
+                    </section>
+
+                    <section class="content--cardReward opacityRewardsOutStock">
+                        <header class="headerCard">
+                            <h3 class="titleReward">Mahogany Special Edition</h3>
+                            <span class="pledge">Pledge $200 or more</span>
+                        </header>
+                        <p class="txt">
+                            You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                            and a personal thank you. You’ll be added to our Backer member
+                            list. Shipping is included.
+                        </p>
+                        <footer class="footerCard">
+                            <span class="numberCard">0<span class="left"> left</span></span>
+                            <input class="btn--selectedReward scaleGray--inputOutStock not-allowedCursor" type="submit"
+                                value="Out of Stock" />
+                        </footer>
+                    </section>
+                </article>
+            </section>
+        </article>
+
+        <!-- MODAL -->
+
+        <form class="sectionReward--project bx--containModel">
+            <header class="headerBackProject">
+                <h2 class="titleProject">Back this project</h2>
+                <p class="txt">
+                    Want to support us in bringing Mastercraft Bamboo Monitor Riser out
+                    in the world?
+                </p>
+            </header>
+
+            <article class="bx--cardReward">
+                <svg class="iconCloseModal" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+                        fill="#000" fill-rule="evenodd" />
+                </svg>
+                <section class="content--cardReward bx--cardModalReward">
+                    <article class="bx--descriptionRewardModal">
+                        <header class="contentHeaderModalReward">
+                            <input class="selectedCardModal activeSelectedReward" type="radio" name="Reward"
+                            id="noReward" />  
+
+                            <header class="headerCard">
+                                <h3 class="titleReward colorActiveState">
+                                    Pledge with no reward
+                                </h3>
+                            </header>
+                        </header>
+    
+                        <section class="CardReward cardModalReward">
+                            <p class="txt">
+                                Choose to support us without a reward if you simply believe in
+                                our project. As a backer, you will be signed up to receive
+                                product updates via email.
+                            </p>
+                        </section>
+                    </article>
+                </section>
+
+                <section class="content--cardReward bx--cardModalReward">
+                    <article class="bx--descriptionRewardModal">
+                        <header class="contentHeaderModalReward">
+                            <input class="selectedCardModal activeSelectedReward openSectionReward" type="radio"
+                            name="Reward" id="Bamboo" />
+
+                            <header class="headerCard">
+                                <section class="title--pledge">
+                                    <h3 class="titleReward colorActiveState">Bamboo Stand</h3>
+                                    <span class="pledge">Pledge $25 or more</span>
+                                </section>
+                                <span class="numberCard">101<span class="left"> left</span></span>
+                            </header>   
+                        </header>
+                        
+                        <section class="CardReward cardModalReward">
+                            
+                            <p class="txt">
+                                You get an ergonomic stand made of natural bamboo. You've
+                                helped us launch our promotional campaign, and you’ll be added
+                                to a special Backer member list.
+                            </p>
+                        </section>
+                    </article>
+
+                    <section class="content--enterPledge">
+                        <div class="separatorSelectedModal"></div>
+                        <article class="contentSubmit">
+                            <span class="txt">Enter yout pledge</span>
+
+                            <section class="btn-actionsSelectedReward">
+                                <div class="enterPledge">
+                                    <input class="valuePledge" type="text" maxlength="3" />
+                                    <i class="bx bx-dollar"></i>
+                                </div>
+                                <input id="submit" type="submit" value="Continue" />
+                            </section>
+                        </article>
+                    </section>
+                </section>
+
+                <section class="content--cardReward bx--cardModalReward">
+                    <article class="bx--descriptionRewardModal">
+                        <header class="contentHeaderModalReward">
+                            <input class="selectedCardModal activeSelectedReward openSectionReward" type="radio"
+                            name="Reward" id="Black" />
+
+                            <header class="headerCard">
+                                <section class="title--pledge">
+                                    <h3 class="titleReward colorActiveState">
+                                        Black Edition Stand
+                                    </h3>
+                                    <span class="pledge">Pledge $75 or more</span>
+                                </section>
+                                <span class="numberCard">64<span class="left"> left</span></span>
+                            </header>
+                        </header>
+                        
+                        <section class="CardReward cardModalReward">
+                            
+                            <p class="txt">
+                                You get a Black Special Edition computer stand and a personal
+                                thank you. You’ll be added to our Backer member list. Shipping
+                                is included.
+                            </p>
+                        </section>
+                    </article>
+
+                    <section class="content--enterPledge">
+                        <div class="separatorSelectedModal"></div>
+                        <article class="contentSubmit">
+                            <span class="txt">Enter yout pledge</span>
+
+                            <section class="btn-actionsSelectedReward">
+                                <div class="enterPledge">
+                                    <input class="valuePledge" type="text" maxlength="3" />
+                                    <i class="bx bx-dollar"></i>
+                                </div>
+                                <input id="submit" type="submit" value="Continue" />
+                            </section>
+                        </article>
+                    </section>
+                </section>
+
+                <section class="content--cardReward bx--cardModalReward opacityRewardsOutStock">
+                    <article class="bx--descriptionRewardModal not-allowedCursor">
+                        <header class="contentHeaderModalReward">
+                            <input class="selectedCardModal not-allowedCursor" type="radio" name="Reward" id="Mahogany"
+                            disabled />
+
+                            <header class="headerCard">
+                                <section class="title--pledge">
+                                    <h3 class="titleReward">Mahogany Special Edition</h3>
+                                    <span class="pledge">Pledge $200 or more</span>
+                                </section>
+                                <span class="numberCard">0<span class="left"> left</span></span>
+                            </header>
+                        </header>
+                        
+                        <article class="CardReward cardModalReward">
+                            
+                            <p class="txt">
+                                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                                and a personal thank you. You’ll be added to our Backer member
+                                list. Shipping is included.
+                            </p>
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </form>
+
+        <section class="bx--success">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
+                    <path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24" />
+                </g>
+            </svg>
+
+            <div class="description">
+                <h3 class="titleDescription">Thanks for your support!</h3>
+                <p class="txt">
+                    Your pledge brings us one step closer to sharing Mastercraft Bamboo
+                    Monitor Riser worldwide. You will get an email once our campaign is
+                    completed.
+                </p>
+            </div>
+
+            <input class="gotIt" type="button" value="Got it!" />
+        </section>
+    </main>
+</body>
+
+</html>

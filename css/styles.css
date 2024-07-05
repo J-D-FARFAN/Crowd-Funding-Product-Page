@@ -1,0 +1,289 @@
+@import url(main.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--fontF);
+}
+
+.spacePadding{padding: 0 10%;}
+
+body{
+    height: 100%;
+    background-color: var(--bg-Color);
+    overflow-x: hidden;
+
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 50vh;
+        background: url(../images/image-hero-desktop.jpg) center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    /*START NAVBAR PAGE*/
+
+    .contentNavbarPage{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logoPage{
+            width: 120px;
+            height: 100%;
+            background: url(../images/logo.svg) center no-repeat;
+            background-size: contain;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            gap: 2.45rem;
+            .listNav{
+                color: var(--bg-Color);
+                text-shadow: 0px 0px 1px black;
+                transition: .3s ease;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    color: hsl(0, 0%, 89%);
+                    border-bottom: 2px solid hsl(0, 0%, 89%);
+                }
+            }
+        }
+
+        .menuBurguerPage{
+            display: none;
+            width: 25px;
+            height: 100%;
+            background: url(../images/icon-hamburger.svg) center no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+    }
+
+    /*END NAVBAR PAGE*/
+
+    /*START MASTERCRAFT PAGE*/
+    .content__allCrowdFunding--main{
+        height: 225vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: default;
+
+        .content--crowdFunding{
+            width: 703px;
+            height: fit-content;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+
+            .content--introductionMastercraft{
+                position: relative;
+                background-color: var(--white);
+                padding: var(--paddingCrowdFunding);
+                border-radius: var(--borderR);
+                
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 56px;
+                    height: 56px;
+                    background: url(../images/logo-mastercraft.svg) center no-repeat;
+                    background-size: contain;
+                    top: -12%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .introductionMastercraft{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .7rem;
+
+                    .title{
+                        padding-top: 1rem;
+                        font-size: 1.8rem;
+                    }
+                }
+                .bx--btn-options{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 56px;
+
+                    .btn--backThisProject{
+                        width: 204px;
+                        height: 100%;
+                        border-radius: var(--borderRBtn);
+                        outline: none;
+                        border: none;
+                        background-color: var(--ModerateCyan);
+                        color: var(--white);
+                        font-weight: var(--fontWeightTwo);
+                        cursor: pointer;
+                        transition: .3s ease;
+
+                        &:hover{background-color: var(--DarkCyan);}
+                    }
+
+
+                    .bx--bookmark{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        background-color: var(--bg-Color-bookmark);
+                        border-radius: var(--borderRBtn);
+                        cursor: pointer;
+                        
+                        &:hover{.iconBookmark{.colorCircle{fill: var(--DarkGray);}}}
+
+                        .bookmark{
+                            color: var(--DarkGray);
+                            font-weight: var(--fontWeightTwo);
+                            padding-right: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .bx--allBacked{
+                background-color: var(--white);
+                padding: var(--paddingCrowdFunding);
+                border-radius: var(--borderR);
+
+                .backed-contain{
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+
+                    .lineThink{
+                        position: relative;
+                        width: 1.8px;
+                        height: 56px;
+                        background-color: var(--bg-Color-bookmark);
+                    }
+
+                    .numbersBacked{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+                        .numbers{
+                            font-size: var(--Black);
+                            font-weight: var(--fontWeightThree);
+                            font-size: 1.7rem;
+                        }
+                        .total{
+                            font-size: 14px;
+                            color: var(--DarkGray);
+                            font-weight: var(--fontWeightOne);
+                        }
+                    }
+                }
+                
+                .bx--longBar{
+                    position: relative;
+                    width: 100%;
+                    height: 12px;
+                    border-radius: var(--borderRBtn);
+                    background-color: var(--bg-Color-bookmark);
+                    margin-top: 2rem;
+                    overflow: hidden;
+                    
+
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 0;
+                        height: 100%;
+                        border-radius: var(--borderRBtn);
+                        background-color: var(--ModerateCyan);
+                        animation: moveLongBar 1s forwards;
+                    }
+                }
+            }
+
+
+            .about--project{
+                background-color: var(--white);
+                padding: var(--paddingCrowdFunding);
+                border-radius: var(--borderR);
+
+                .about{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    margin-bottom: 2rem;
+
+                    .titelAbout{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionReward--project{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .content--cardReward{
+            border: 2px solid var(--bg-Color-bookmark);
+            border-radius: var(--borderR);
+            padding: var(--paddingCrowdFunding);
+
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .headerCard{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .titleReward{font-size: 17px;}
+                .pledge{font-size: 14px; color: var(--ModerateCyan); font-weight: var(--fontWeightTwo);}
+            }
+
+            .footerCard{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .btn--selectedReward{
+                    width: 150px;
+                    height: 45px;
+                    border-radius: var(--borderRBtn);
+                    outline: none;
+                    border: none;
+                    background-color: var(--ModerateCyan);
+                    color: var(--white);
+                    font-weight: var(--fontWeightTwo);
+                    cursor: pointer;
+                    transition: .3s ease;
+
+                    &:hover{background-color: var(--DarkCyan);}
+                }
+            }
+        }
+    }
+}

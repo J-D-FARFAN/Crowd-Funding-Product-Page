@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+@import url(reset.css);
+@import url(styles.css);
+@import url(modalState.css);
+@import url(media700.css);
+@import url(media550.css);
+@import url(media400.css);
+
+:root{
+    --ModerateCyan: hsl(176, 50%, 47%);
+    --white: hsl(0, 0%, 100%);
+    --bg-Color: #fafafa;
+    --bg-Color-bookmark: #f2f2f2;
+
+    --DarkCyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 48%);
+
+    /*TXT STYLES*/
+    --fontZ: 16px; /*Font size*/
+    --fontF: "Commissioner", sans-serif;
+    /*Weights: 400, 500, 700*/
+    --fontWeightOne: 400;
+    --fontWeightTwo: 500;
+    --fontWeightThree: 700;
+    --borderR: 12px;
+    --borderRBtn: 28px;
+    --paddingCrowdFunding: 2rem;
+}
+
+
+.menuBurguerPageClose{
+    display: block;
+    width: 25px;
+    height: 100%;
+    background: url(../images/icon-close-menu.svg) center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.txt{
+    font-size: var(--fontZ);
+    color: var(--DarkGray);
+    line-height: 1.7rem;
+}
+
+.opacityRewardsOutStock{opacity: .5;}
+.scaleGray--inputOutStock{background-color: var(--DarkGray) !important;}
+.not-allowedCursor{cursor: not-allowed !important;}
+
+.numberCard{
+    font-weight: var(--fontWeightThree);
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    .left{
+        color: var(--DarkGray);
+        font-size: 14px;
+        font-weight: var(--fontWeightOne);
+    }
+}
+
+.montionBlur{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 310vh;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 1;
+    top: -500px;
+    left: 0;
+}
+
+/*Animation LongBar*/
+@keyframes moveLongBar {
+    0%{width: 0;}
+    100%{width: 82%;}
+}
+
+.colorActiveBookmark{fill: var(--ModerateCyan);}
+.colorActiveTextBookmark{color: var(--ModerateCyan);}

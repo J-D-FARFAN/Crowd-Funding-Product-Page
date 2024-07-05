@@ -1,0 +1,105 @@
+@import url(main.css);
+@media screen and (max-width: 400px) {
+    .txt{font-size: 14px !important;}
+
+    .montionBlur{
+        height: 510vh !important;
+    }
+
+    body {
+        .content__allCrowdFunding--main {
+            height: 400vh;
+            margin: 1.5rem;
+
+            .content--crowdFunding {
+                .content--introductionMastercraft{
+                    &::before{
+                        position: absolute;
+                        top: -10%;
+                    }
+                    .introductionMastercraft{
+                        text-align: center;
+                        .title{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .bx--btn-options{
+                        gap: .7rem;
+                        .bx--bookmark{
+                            width: fit-content;
+                            .bookmark{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bx--containModel{
+            width: 100%;
+            height: fit-content;
+            top: 150%;
+
+            .bx--cardReward{
+                .bx--cardModalReward{
+                    width: 100%;
+                    height: fit-content;
+
+                    .bx--descriptionRewardModal{
+                        position: relative;
+                        .txt{
+                            margin-left: 0;
+                            margin-bottom: 3rem;
+                        }
+
+                        .contentHeaderModalReward{
+                            gap: 1rem;
+
+                            .selectedCardModal{
+                                height: 23px;   
+                            }
+                            .headerCard{
+                                .title--pledge{
+                                    width: 100%;
+                                    display: block;
+                                    .titleReward{
+                                        margin-bottom: .5rem;
+                                    }
+                                }
+
+                                .numberCard{
+                                    position: absolute;
+                                    bottom: 2rem;
+                                    left: 2rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .content--enterPledge{
+                        width: 100%;
+                        height: fit-content;
+                        user-select: none;
+                        .contentSubmit{
+                            flex-direction: column;
+                            gap: 1rem;
+                            padding: 1.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bx--success{
+            width: 100%;
+            left: 0;
+            top: 25%;
+
+            .description{
+                width: 100%;
+            }
+        }
+    }
+}

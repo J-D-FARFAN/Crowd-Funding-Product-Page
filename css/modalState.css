@@ -1,0 +1,212 @@
+@import url(main.css);
+
+
+body{
+    .bx--containModel{
+        position: absolute;
+        padding: var(--paddingCrowdFunding);
+        border-radius: var(--borderR);
+        background-color: var(--white);
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        display: none;
+    
+        .headerBackProject{
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+            margin-bottom: 1rem;
+        }
+    
+        .bx--cardReward{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+    
+            .iconCloseModal{
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5em;
+                cursor: pointer;
+                opacity: .4;
+                transition: .3s ease;
+                &:hover{opacity: 1;}
+            }
+    
+            .bx--cardModalReward{
+                padding: 0;
+                gap: 0;
+                .bx--descriptionRewardModal{
+                    gap: 1.5rem;
+                    padding: 2rem;
+                    transition: .3s ease;
+                    cursor: pointer;
+
+                    .txt{
+                        margin-left: 3.5rem;
+                    }
+
+                    .contentHeaderModalReward{
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                        margin-bottom: 1rem;
+
+                        .selectedCardModal{
+                            position: relative;
+                            appearance: none;
+                            width: 27px;
+                            height: 24.5px;
+                            border: 1px solid var(--DarkGray);
+                            border-radius: 50%;
+                            outline: none;
+                            cursor: pointer;
+            
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+            
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 13px;
+                                height: 13px;
+                                background-color: transparent;
+                                border-radius: 50%;
+                            }
+            
+                            &:checked::before{background-color: var(--ModerateCyan);}
+                            &:checked{border: 1px solid var(--ModerateCyan);}
+            
+                        }
+
+                        .headerCard{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .title--pledge{
+                                display: flex;
+                                align-items: center;
+                                gap: .7rem;
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .activeSelectedReward{border-color: var(--ModerateCyan);}
+                        .colorActiveState{color: var(--ModerateCyan);}
+                    }
+                    .cardModalReward{width: 100%;}
+                }
+    
+                .content--enterPledge{
+                    width: 100%;
+                    height: 80px;
+                    display: none;
+                    
+                    .separatorSelectedModal{
+                        width: 100%;
+                        height: 1.5px;
+                        background-color: var(--bg-Color-bookmark);
+                    }
+                    .contentSubmit{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 2rem;
+    
+    
+                        .btn-actionsSelectedReward{
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+    
+                            .enterPledge{
+                                position: relative;
+    
+                                input[type="text"]{
+                                    position: relative;
+                                    outline: none;
+                                    width: 100px;
+                                    height: 47px;
+                                    border: 2px solid var(--bg-Color-bookmark);
+                                    border-radius: var(--borderRBtn);
+                                    text-indent: 2.4rem;
+                                    transition: .3s ease;
+                                    font-weight: var(--fontWeightThree);
+    
+                                    &:hover{border-color: var(--ModerateCyan);}
+                                }
+    
+                                .bx-dollar{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 1rem;
+                                    transform: translateY(-50%);
+                                    color: var(--DarkGray);
+                                }
+                            }
+    
+                            input[type="submit"]{
+                                outline: none;
+                                border: none;
+                                color: var(--white);
+                                font-weight: var(--fontWeightTwo);
+                                cursor: pointer;
+                                width: 100px;
+                                height: 47px;
+                                background-color: var(--ModerateCyan);
+                                border-radius: var(--borderRBtn);
+                                transition: .3s ease;
+    
+                                &:hover{background-color: var(--DarkCyan);}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .bx--success{
+        display: none;
+        position: fixed;
+        top: 33%;
+        left: 33%;
+        transform: translate(-25%, -25%);
+        background-color: var(--white);
+        padding: var(--paddingCrowdFunding);
+        border-radius: var(--borderR);
+        text-align: center;
+        z-index: 2;
+
+
+        .description{
+            width: 460px;
+            margin-top: 2rem;
+            margin-bottom: 1.3rem;
+            .txt{margin-top: 1rem;}
+        }
+
+        .gotIt{
+            width: 90px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: var(--borderRBtn);
+            outline: none;
+            border: none;
+            background-color: var(--ModerateCyan);
+            transition: .3s ease;
+            color: var(--white);
+            font-family: var(--fontWeightTwo);
+
+            &:hover{background-color: var(--DarkCyan);}
+        }
+    }
+}
